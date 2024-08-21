@@ -40,7 +40,7 @@ def normalize_binary(binary_str):
 
 """Alterar valor"""
 # Número dado
-num = 48.344
+num = -48.344
 binary_rep = decimal_to_binary(num)
 normalized_mantissa, exponent = normalize_binary(binary_rep)
 
