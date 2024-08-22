@@ -1,11 +1,15 @@
 import math
 
 def f(x):
-    return x**2 - math.exp(x)
+    # return 1 - 40*(3+x)/(3*x + (x**2)**3)
+    # return x**2 - math.exp(x)
+    # return x**2 - 3
+    # return 14 - 6.3**x
+    return -5*x**4 + 216*x**2 - 1296
 
 def cordas():
     x0 = float(input('x0: '))
-    x1 = float(input('x1:'))
+    x1 = float(input('x1: '))
     iteracoes = int(input('iterações: '))
     iteracao = 0
     while iteracao <= iteracoes:

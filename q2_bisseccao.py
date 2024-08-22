@@ -19,6 +19,6 @@ def bissec(f, a, b, tol, n):
 
 if __name__== '__main__':
     def f(x):
-        return x**2 - 1.12 # função
-Raiz = bissec(f, 1, 1.5, 0.01, 40)
+        return x**2 - 3 # função
+Raiz = bissec(f, 1, 2, 0.01, 8)
 print(Raiz)

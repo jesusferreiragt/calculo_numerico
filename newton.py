@@ -18,8 +18,10 @@ def Newton(f, df, x0, epsilon, Iter):
 
 if __name__== '__main__':
     def f(x):
-        return x**3 - 2*x**2 - 5 # função
+        # return x**3 - 2*x**2 - 5 # função
+        return -5*x**4 + 216*x**2 - 1296
     def df(x):
-        return 3*x**2 - 4*x # derivada da função
-Raiz = Newton(f, df, 4, 0.001, 20)
+        # return 3*x**2 - 4*x # derivada da função
+        return -2*x**3 + 432*x
+Raiz = Newton(f, df, 1, 0.001, 3)
 print(Raiz)
