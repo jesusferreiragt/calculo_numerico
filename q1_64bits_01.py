@@ -1,7 +1,7 @@
 import math
 
 # Passo a: Normalizar o número e representá-lo em notação de ponto flutuante na base 2
-x = -18.344
+x = -0.3436
 
 # Representação binária da parte inteira e da parte fracionária separadamente
 parte_inteira = math.floor(abs(x))

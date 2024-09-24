@@ -5,7 +5,8 @@ def f(x):
     # return x**2 - math.exp(x)
     # return x**2 - 3
     # return 14 - 6.3**x
-    return -5*x**4 + 216*x**2 - 1296
+    # return -5*x**4 + 216*x**2 - 1296
+    return 1 - x*math.exp(x) - x
 
 def cordas():
     x0 = float(input('x0: '))

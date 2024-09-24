@@ -1,5 +1,6 @@
 # epsilon = erro
 # iter = iterações
+import math
 
 def Newton(f, df, x0, epsilon, Iter):
     if abs(f(x0)) <= epsilon:
@@ -19,9 +20,11 @@ def Newton(f, df, x0, epsilon, Iter):
 if __name__== '__main__':
     def f(x):
         # return x**3 - 2*x**2 - 5 # função
-        return -5*x**4 + 216*x**2 - 1296
+        return 1 - x*math.exp(x) - x
+
     def df(x):
         # return 3*x**2 - 4*x # derivada da função
-        return -2*x**3 + 432*x
-Raiz = Newton(f, df, 1, 0.001, 3)
+        # return -2*x**3 + 432*x
+        return -math.exp(x)*(x+1) - 1
+Raiz = Newton(f, df, 0, 0.01, 3)
 print(Raiz)
